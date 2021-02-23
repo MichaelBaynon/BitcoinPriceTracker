@@ -44,20 +44,35 @@ body {
   color: rgb(14, 112, 14);
 }
 
-.aboutLink {
+.nav {
+  /* border: 1px solid red; */
+  width: fit-content;
   position: absolute;
   top: 0;
   right: 0;
-  transition: 0.3s;
-  margin: 30px;
-  margin-right: 65px;
   font-size: 30px;
   text-align: right;
+  padding: 20px;
+}
+
+.aboutLink {
+  transition: 0.3s;
+  text-decoration: none;
+  color: rgb(31, 194, 31);
+  margin-right: 50px;
+}
+
+.aboutLink:hover {
+  color: rgb(14, 112, 14);
+}
+
+.inDepthDetails {
+  transition: 0.3s;
   text-decoration: none;
   color: rgb(31, 194, 31);
 }
 
-.aboutLink:hover {
+.inDepthDetails:hover {
   color: rgb(14, 112, 14);
 }
 
@@ -76,5 +91,26 @@ body {
 }
 
 .backToBitcoin:hover {
+  color: rgb(14, 112, 14);
+}
+
+/* extra details page */
+
+.tradingview-widget-container {
+  /* border: 1px solid red; */
+  text-align: center;
+}
+
+.backInDepthDetails {
+  text-decoration: none;
+  position: relative;
+  margin-left: 48%;
+  font-size: 20px;
+
+  color: rgb(31, 194, 31);
+  transition: 0.3s;
+}
+
+.backInDepthDetails:hover {
   color: rgb(14, 112, 14);
 }

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="shortcut icon" type="image/png" href="./images/bitcoin.png" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Extra Details</title>
+  </head>
+  <body>
+    <div class="tradingview-widget-container">
+      <div class="tradingview-widget-container__widget"></div>
+      <div class="tradingview-widget-copyright">
+        <a
+          href="https://www.tradingview.com"
+          rel="noopener"
+          target="_blank"
+        ></a>
+      </div>
+      <script
+        type="text/javascript"
+        src="https://s3.tradingview.com/external-embedding/embed-widget-ticker-tape.js"
+        async
+      >
+          {
+          "symbols": [
+            {
+              "proName": "BITSTAMP:BTCUSD",
+              "title": "BTC/USD"
+            },
+            {
+              "proName": "BITSTAMP:ETHUSD",
+              "title": "ETH/USD"
+            },
+            {
+              "description": "LTC/USD",
+              "proName": "BITFINEX:LTCUSD"
+            },
+            {
+              "description": "DOGE/USD",
+              "proName": "BITTREX:DOGEUSD"
+            },
+            {
+              "description": "ADA/USD",
+              "proName": "BITTREX:ADAUSD"
+            }
+          ],
+          "showSymbolLogo": true,
+          "colorTheme": "light",
+          "isTransparent": false,
+          "displayMode": "adaptive",
+          "locale": "en"
+        }
+      </script>
+    </div>
+
+    <div class="tradingview-widget-container">
+      <div id="tradingview_2ed67"></div>
+      <div class="tradingview-widget-copyright">
+        <a
+          href="https://www.tradingview.com/symbols/BTCUSD/?exchange=BITBAY"
+          rel="noopener"
+          target="_blank"
+        ></a>
+      </div>
+      <script
+        type="text/javascript"
+        src="https://s3.tradingview.com/tv.js"
+      ></script>
+      <script type="text/javascript">
+        new TradingView.MediumWidget({
+          symbols: [["Bitcoin", "BITBAY:BTCUSD|12M"]],
+          chartOnly: false,
+          width: 1800,
+          height: 600,
+          locale: "en",
+          colorTheme: "light",
+          gridLineColor: "#F0F3FA",
+          trendLineColor: "#2196F3",
+          fontColor: "#787B86",
+          underLineColor: "#E3F2FD",
+          isTransparent: false,
+          autosize: false,
+          container_id: "tradingview_2ed67",
+        });
+      </script>
+    </div>
+    <a class="backInDepthDetails" href="./index.html">🡰 Back to Bitcoin</a>
+    <p class="madeBy">
+      Made by
+      <a href="https://github.com/MichaelBaynon" target="_">Michael Baynon</a>
+    </p>
+  </body>
+</html>
