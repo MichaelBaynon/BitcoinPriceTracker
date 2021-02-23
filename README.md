@@ -1,3 +1,3 @@
 # BitcoinPriceTracker
 
-Deployed Site: https://bitcointracker.netlify.app/index.html
+Deployed Site: https://bitcointracker.netlify.app/
